@@ -141,7 +141,5 @@ class Database:
 
     async def get_db_size(self):
         return (await self.db.command("dbstats"))['dataSize']
-import certifi
-Client = MongoClient("mongodb+srv://<username>:<password>@cluster0.ax9ugoz.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
 
 db = Database(DATABASE_URI, DATABASE_NAME)
