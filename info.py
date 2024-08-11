@@ -30,9 +30,9 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cokenclips:<Mongoclips>@cokenclips.it4xm.mongodb.net/?retryWrites=true&w=majority&appName=Cokenclips")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cokenclips")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cokenclipscollection')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb://cokenclips:<yyyyyy>@<cokenclips>/?ssl=true&replicaSet=atlas-x9rpfa-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cokenclips")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cokenclipsdb")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cokenclips')
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL', '')
